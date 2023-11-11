@@ -1,11 +1,12 @@
 "use client";
 import React, { useState } from "react";
-
+import Image from "next/image";
 const links = [
   { label: "Home", url: "/" },
   { label: "About", url: "/about" },
   { label: "Users", url: "/users" },
   { label: "Extra", url: "//bcdeo/bingo.html", target: "_blank" }, // Added target="_blank"
+  { label: "JobSheets", url: "/jobsheets", target: "_blank" }, // Added target="_blank"
 ];
 
 const listItems = links.map((link) => (
@@ -25,9 +26,9 @@ function Navbar() {
     <nav>
       <div className="container relative m-auto p-3 flex justify-between items-center">
         <a href="/">
-          <img
+          <Image
             className="hover:scale-125 transition duration-500 cursor-pointer drop-shadow-md"
-            src="./favicon.ico"
+            src="/favicon.ico"
             alt="DPWH"
             width="50"
             height="40"

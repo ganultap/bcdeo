@@ -2,6 +2,7 @@
 import React from "react";
 import NavBar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
+import Image from "next/image";
 
 const AboutPage = () => {
   return (
@@ -15,7 +16,13 @@ const AboutPage = () => {
         <div className="max-w-2xl p-4 bg-white border rounded-lg drop-shadow-md">
         <h1 className="text-2xl font-bold mb-4 text-center drop-shadow-md border-b-stone-400">
           <div className="flex justify-center items-center">
-            <img src="../favicon.ico" alt="DPWH Logo" width="120px"/>
+          <Image
+            className="hover:scale-125 transition duration-500 cursor-pointer drop-shadow-md"
+            src="/favicon.ico"
+            alt="DPWH"
+            width="90"
+            height="90"
+          />
           </div>
           BUTUAN CITY DISTRICT ENGINEERING OFFICE
         </h1>
